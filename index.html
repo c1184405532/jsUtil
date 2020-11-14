@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js工具函数</title>
+  <script src="./util/array.js"></script>
+  <script src="./util/util.js"></script>
+  <script src="./util//string.js"></script>
+</head>
+<body>
+  
+</body>
+<script>
+
+  console.log('一维数组去重',arrRemoval([1,2,3,1,2,48,5]))
+
+
+  let oldCloneObj = {name:'c',age:1};
+  let a = oldCloneObj;
+  let newCloneObj = deepClone(oldCloneObj)
+  console.log('深度克隆',newCloneObj)
+
+  console.log(strElipsis('ad爱我啊打是啊',3,'...'))
+
+  console.log(phoneSpilt('18584084806'))
+
+  console.log(nameSplit('陈禹廷'))
+
+  console.log(stringDeDuplication('我的我的啊啊啊131324'))
+</script>
+</html>
