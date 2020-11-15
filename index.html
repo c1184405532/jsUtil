@@ -9,7 +9,10 @@
   <script src="./util//string.js"></script>
 </head>
 <body>
-  
+  <span>
+    <label for="">只能输入数字</label>
+    <input type="text" oninput="isNumber(this)" name="" id="">
+  </span>
 </body>
 <script>
 
@@ -28,5 +31,15 @@
   console.log(nameSplit('陈禹廷'))
 
   console.log(stringDeDuplication('我的我的啊啊啊131324'))
+
+  console.log(regCNA('abc1234'))
+
+  function isNumber(event){
+    event.value = inputNumber(event.value);
+  }
+
+  // setInterval(()=>{
+  //   console.log(countDown(1605435235))
+  // },1000)
 </script>
 </html>
